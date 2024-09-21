@@ -1,0 +1,1 @@
+az webapp up --name flask-ml-toanla --resource-group Azuredevops --runtime "PYTHON:3.8" --sku FREE
