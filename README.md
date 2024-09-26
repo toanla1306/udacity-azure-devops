@@ -100,18 +100,87 @@ In this project, you’ll create a GitHub repository to establish a Continuous I
 ## Successful deploy of the project in Azure Pipelines.  
 [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
-- Create
+- Access the Cloud Shell and Generate SSHKeygen
+
+    ![image](./screenshot/generate-sshkey.png)
+- Clone Repository Application
+
+    ![image](./screenshot/clone-repo-complete.png)
+
+- Deploy application to Azure App Service
+
+    ![image](./screenshot/deploy-application-azure-app-svc.png)
+
+- Azure App Service Verification
+    - Azure Service App Running
+    
+        ![image](./screenshot/application-in-azure-app-svc.png)
+
+    - Access via Domain of App Service
+
+        ![image](./screenshot/access-domain-app-svc.png)
+
+- Initialization Azure Devops Workspace
+    - Init Workspace
+
+        ![image](./screenshot/init-new-workspace-az-devops.png)
+
+    - Create Workspace with Name AzureDevopsUdacity
+
+        ![image](./screenshot/workspace-azure-devops.png)
+
+- Create Agent Pool
+    - Create the VM as the Agent Pool
+
+        ![image](./screenshot/creating-node-pool-vm.png)
+    - Created Completely Agent Pool
+
+        ![image](./screenshot/created-vm-agent-pool.png)
+    - Create Access Token Azure Devops
+
+        ![image](./screenshot/create-access-token-azdevops.png)
+    - Create the New Agent pools and Install via Script
+        ```
+        mkdir myagent && cd myagent
+        tar zxvf vsts-agent-linux-x64-3.244.1.tar.gz
+        ./config.sh
+        ```
+
+        ![image](./screenshot/config-azure-agent-pool.png)
+
+        ```
+        ./run.sh
+        ```
+
+        ![image](./screenshot/agent-pool-online.png)
+
+- Create Azure Pipeline
+    - Initial Azure Pipline 
+
+        ![image](./screenshot/create-pipeline.png)
+
+    - Verify the Azure Pipeline Work Well
+
+        ![image](./screenshot/pipelines-work-well.png)
+        ![image](./screenshot/agent-run-job-pipelines.png)
+
+    - Create Service Connection
+
+        ![image](./screenshot/create-service-connection.png)
 
 ## Running Azure App Service from Azure Pipelines automatic deployment
 
 ## Successful prediction from deployed flask app in Azure Cloud Shell. 
 - [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
+- The screenshot of this output
+    ![image](./screenshot/make_predict_azure_app_cloudshell.png)
+
 
 ```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
+odl_user [ ~/udacity-azure-devops ]$ ./make_predict_azure_app.sh 
 Port: 443
-{"prediction":[20.35373177134412]}
+{"prediction":[2.431574790057212]}
+odl_user [ ~/udacity-azure-devops ]$ 
 ```
 
 * Output of streamed log files from deployed application
