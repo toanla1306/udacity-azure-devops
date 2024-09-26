@@ -56,7 +56,7 @@ In this project, you’ll create a GitHub repository to establish a Continuous I
 -  Deploy application to Azure App Service
     ```
     az login
-    az webapp up --name flask-ml-toanla --resource-group Azuredevops --runtime "PYTHON:3.8" --sku FREE
+    az webapp up --name flask-ml-toanla --resource-group Azuredevops --runtime "PYTHON:3.12" --sku FREE
     ```
 - Verify application run well in Azure App Service
 
@@ -98,7 +98,7 @@ In this project, you’ll create a GitHub repository to establish a Continuous I
     ![image](./screenshot/output_test_run_localhost.png)
 
 ## Successful deploy of the project in Azure Pipelines.  
-- [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+[Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
 - Create
 
@@ -120,7 +120,7 @@ Port: 443
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+To improve your deployment process, I recommend that we create a dedicated branch and a separate testing environment. This allows you to isolate new features and fixes from the main codebase, enabling thorough testing without impacting production. Set up CI/CD practices to automate testing and deployment, ensuring a smoother and more reliable release process.
 
 ## Demo 
 
