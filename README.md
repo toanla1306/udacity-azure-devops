@@ -169,7 +169,9 @@ Below are the Instructions on how to setup a CI/CD pipeline in Azure
         ![image](./screenshot/create-service-connection.png)
 
 ## Running Azure App Service from Azure Pipelines automatic deployment
-
+- Application Deployed via Pipeline Complete
+    ![image](./screenshot/pipeline_deploy_app_complete.png)
+    ![image](./screenshot/pipeline_deploy_app_complete-2.png)
 
 ## Successful prediction from deployed flask app in Azure Cloud Shell. 
 - [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
@@ -189,9 +191,10 @@ odl_user [ ~/udacity-azure-devops ]$
 To improve your deployment process, I recommend that we create a dedicated branch and a separate testing environment. This allows you to isolate new features and fixes from the main codebase, enabling thorough testing without impacting production. Set up CI/CD practices to automate testing and deployment, ensuring a smoother and more reliable release process.
 
 * Output of streamed log files from deployed application
+./webapp_log.zip file 
 
 > 
 
 ## Demo 
 
-<TODO: Add link Screencast on YouTube>
+https://www.loom.com/share/76c1b68d54074d33b9a1ca3a35331b3b?sid=0ccfc976-de86-4b0c-a021-68047cfa6fee
