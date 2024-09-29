@@ -172,6 +172,7 @@ In this project, you’ll create a GitHub repository to establish a Continuous I
 
 ## Running Azure App Service from Azure Pipelines automatic deployment
 
+
 ## Successful prediction from deployed flask app in Azure Cloud Shell. 
 - [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
 - The screenshot of this output
@@ -185,14 +186,6 @@ Port: 443
 odl_user [ ~/udacity-azure-devops ]$ 
 ```
 
-* Output of streamed log files from deployed application
-
-> 
-
 ## Enhancements
 
 To improve your deployment process, I recommend that we create a dedicated branch and a separate testing environment. This allows you to isolate new features and fixes from the main codebase, enabling thorough testing without impacting production. Set up CI/CD practices to automate testing and deployment, ensuring a smoother and more reliable release process.
-
-## Demo 
-
-<TODO: Add link Screencast on YouTube>
