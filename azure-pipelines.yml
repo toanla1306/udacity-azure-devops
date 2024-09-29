@@ -21,7 +21,6 @@ variables:
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
 
-
 stages:
 - stage: Build
   displayName: Build Stage
