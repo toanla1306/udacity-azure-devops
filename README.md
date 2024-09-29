@@ -1,3 +1,5 @@
+[![Python application test with Github Actions](https://github.com/toanla1306/udacity-azure-devops/actions/workflows/main.yml/badge.svg)](https://github.com/toanla1306/udacity-azure-devops/actions/workflows/main.yml)
+
 # udacity-azure-devops
 The lab of Azure Devops Project in Udacity course.
 
