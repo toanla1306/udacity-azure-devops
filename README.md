@@ -17,10 +17,8 @@ In this project, you’ll create a GitHub repository to establish a Continuous I
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
-
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+Below are the Instructions on how to setup a CI/CD pipeline in Azure
+![image](./screenshot/diagram.png)
 
 ## Project running on Azure App Service
 - Create The MakeFile 
@@ -189,3 +187,11 @@ odl_user [ ~/udacity-azure-devops ]$
 ## Enhancements
 
 To improve your deployment process, I recommend that we create a dedicated branch and a separate testing environment. This allows you to isolate new features and fixes from the main codebase, enabling thorough testing without impacting production. Set up CI/CD practices to automate testing and deployment, ensuring a smoother and more reliable release process.
+
+* Output of streamed log files from deployed application
+
+> 
+
+## Demo 
+
+<TODO: Add link Screencast on YouTube>
