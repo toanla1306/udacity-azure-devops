@@ -23,7 +23,7 @@ variables:
 
 
 stages:
-- stage: Build Application
+- stage: Build
   displayName: Build Stage
   jobs:
   - job: BuildJob
