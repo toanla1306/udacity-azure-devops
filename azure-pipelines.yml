@@ -32,18 +32,18 @@ stages:
         python3 -m pip install --upgrade pip
         python3 -m pip install setup
         python3 -m pip install -r requirements.txt
-      workingDirectory: ${projectRoot}
+      workingDirectory: $(System.DefaultWorkingDirectory)
       displayName: 'Install Dependencies'
     - script: | 
         export PATH=$HOME/.local/bin:$PATH
         make install
         make lint
-      workingDirectory: ${projectRoot}
+      workingDirectory: $(System.DefaultWorkingDirectory)
       displayName: 'Run Linter Test'
     - task: ArchiveFiles@2
       displayName: 'Archive files'
       inputs:
-        rootFolderOrFile: '$(projectRoot)'
+        rootFolderOrFile: $(System.DefaultWorkingDirectory)
         includeRootFolder: false
         archiveType: zip
         archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
