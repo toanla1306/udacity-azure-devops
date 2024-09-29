@@ -34,7 +34,7 @@ stages:
         python3 -m pip install setup
         python3 -m pip install -r requirements.txt
       workingDirectory: ${projectRoot}
-      desplayName: 'Install Dependencies'
+      displayName: 'Install Dependencies'
     - script: | 
         export PATH=$HOME/.local/bin:$PATH
         make install
