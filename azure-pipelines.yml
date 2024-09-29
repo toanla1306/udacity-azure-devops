@@ -61,12 +61,13 @@ stages:
   jobs:
   - deployment: DeploymentJob
     pool: agentpool
+    environment: $(environmentName)
     strategy:
       runOnce:
         deploy:
           steps:
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : $(environmentName)'
+            displayName: 'Deploy Azure Web App : flask-ml-service'
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
