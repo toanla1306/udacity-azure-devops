@@ -4,7 +4,6 @@
 The lab of Azure Devops Project in Udacity course.
 
 
-
 ## Environment
 Python 3.12 
 
