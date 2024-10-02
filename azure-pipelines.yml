@@ -6,11 +6,11 @@
 trigger:
 - master
 
-pool: poolAgent
+pool: agentPool
 
 variables:
   # TODO: Replace the service connection name
-  azureServiceConnectionId: 'flask-ml-toanla'
+  azureServiceConnectionId: 'fakerestapi-toanla'
   
   # TODO: Replace 'mywebapp193576' with the existing Web App name
   webAppName: 'flask-ml-toanla'
@@ -26,7 +26,7 @@ stages:
   displayName: Build Stage
   jobs:
   - job: BuildJob
-    pool: poolAgent
+    pool: agentPool
     steps: 
     - script: | 
         python3 -m pip install --upgrade pip
@@ -59,7 +59,7 @@ stages:
   condition: succeeded()
   jobs:
   - deployment: DeploymentJob
-    pool: poolAgent
+    pool: agentPool
     environment: $(environmentName)
     strategy:
       runOnce:
